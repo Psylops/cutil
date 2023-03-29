@@ -1,25 +1,21 @@
 #imports necessary modules and defines end.
 import platform
 import os
+import logging
 import subprocess
+import cutil.opt as opt
+import cutil.splash as splash
+
 import time
-import keyboard
-import string
-import datetime
 end = "\033[0m"
 
-osname = platform.system()
+#TODO add daemon mode where it will compile after detecting file changes.
+#TODO add ability to make and read profiles for different files.
+#TODO add logging and save it in a temporary place
+#TODO add the ability to update itself
+#TODO also finish it
 
-#A function to only get numbers and only one number
-def getopt():
-    alphabet = list(string.ascii_letters)
-    while True:
-        for letter in alphabet: # detect when a letter is pressed
-            if keyboard.is_pressed(letter):
-                print("Please enter a valid option")
-        for num in range(10): # detect numbers 0-9
-            if keyboard.is_pressed(str(num)):
-                return str(num)
+osname = platform.system()
             
 #checking if the terminal supports ansi
     
@@ -49,13 +45,12 @@ if osname == "Windows":
 #Version number
 ver = "1.0"
 
-# Startup Information
-print("\033[1;35mCUtil version\033[34m",ver,"\033[35m Running on\033[34m",osname,"\033[35m Current Date:\033[34m",datetime.date.today(),"\033[35m.")
+splash.Splash(ver)
 
 # Waits and cleans up the console
 time.sleep(1.9)
-test = os.system('cls' if osname == 'Windows' else 'clear')
-print(test)
+test = os.system('cls' if platform.system() == 'Windows' else 'clear')
+
 #Gets the name of the file that wants to be compiled
 print("\033[1;36mPlease enter the file name you want to compile\033[32m")
 filename = input("Filename: ")
@@ -66,6 +61,6 @@ print("1) C ")
 print("2) C++")
 print("3) Java")
 
-opt = getopt()
+opt = opt.getopt()
 
 print(end)
