@@ -1,13 +1,12 @@
-#imports necessary modules and defines end.
-import platform
-import os
+#imports necessary modules defines end and checks if it ran as admin.
+import platform, sys, os, subprocess
 import logging
-import subprocess
-import cutil.opt as opt
-import cutil.splash as splash
-
+import opt, splash, isadmin
 import time
+
 end = "\033[0m"
+
+admin = isadmin()
 
 #TODO add daemon mode where it will compile after detecting file changes.
 #TODO add ability to make and read profiles for different files.
@@ -49,7 +48,7 @@ splash.Splash(ver)
 
 # Waits and cleans up the console
 time.sleep(1.9)
-test = os.system('cls' if platform.system() == 'Windows' else 'clear')
+clr = os.system('cls' if osname == 'Windows' else 'clear')
 
 #Gets the name of the file that wants to be compiled
 print("\033[1;36mPlease enter the file name you want to compile\033[32m")
@@ -63,4 +62,15 @@ print("3) Java")
 
 opt = opt.getopt()
 
+
+
+match opt:
+    case 1:
+        os.system("javac {}.java\033[31m".format)
+    case 2:
+        os.system("")
+print("\033[36mDo you want to execute the program?")
+runfile = input("\033[32mY/n]")
+if runfile == True:
+    run = os.system("start {}" if osname == "Windows" else "./{}".format(filename, filename))
 print(end)

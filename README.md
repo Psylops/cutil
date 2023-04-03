@@ -1,2 +1,2 @@
 # CUtil
-A python script for compiling files, because i'm lazy
+A python application for compiling files, because i like to overengineer the simplest of things.
