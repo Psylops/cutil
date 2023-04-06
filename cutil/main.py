@@ -1,6 +1,7 @@
 #imports necessary modules defines end and checks if it ran as admin.
 import platform, sys, os, subprocess
 import logging
+import argparse
 import opt, splash, isadmin
 import time
 
