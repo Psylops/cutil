@@ -44,6 +44,7 @@ if osname == "Windows":
 #Version number
 ver = "1.0"
 
+#Splash line
 splash.Splash(ver)
 
 # Waits and cleans up the console
@@ -59,6 +60,7 @@ print("\033[36m Please select the language the file is programmed in\033[33m")
 print("1) C ")
 print("2) C++")
 print("3) Java")
+print("4) Typescript")
 
 opt = opt.getopt()
 
