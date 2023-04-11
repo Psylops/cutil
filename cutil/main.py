@@ -1,10 +1,31 @@
-#imports necessary modules defines end and checks if it ran as admin.
+#imports necessary modules.
 import platform, sys, os, subprocess
 import logging
 import argparse
 import opt, splash, isadmin
 import time
 
+# create parser
+parser = argparse.ArgumentParser()
+ 
+# add arguments to the parser
+parser.add_argument("command")
+ 
+# parse the arguments
+args = parser.parse_args()
+
+    
+def helper():
+    f = open("help.txt", 'r')
+    filecontents = f.read()
+    print(filecontents)
+    f.close()
+    
+if args.command == "help":
+    helper()
+    exit()
+
+# defines end which prevents coloring the terminal and checks if it ran as admin.
 end = "\033[0m"
 
 admin = isadmin()
@@ -14,6 +35,8 @@ admin = isadmin()
 #TODO add logging and save it in a temporary place
 #TODO add the ability to update itself
 #TODO also finish it
+
+
 
 osname = platform.system()
             
