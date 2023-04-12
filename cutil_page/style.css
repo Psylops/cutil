@@ -4,6 +4,7 @@ body{
     background-color: #ffffff;
     font-family: Arial;
     overflow-x: hidden;
+    height: 100vh;
 }
 #Title{
     margin: 0px;
@@ -65,4 +66,9 @@ nav{
 #selection:hover{
     background-color: #0bf4d2;
     color: #FFFFFF;
+}
+#Head_Image{
+    float: right;
+    margin: 0px;
+    margin-top: 0px;
 }
