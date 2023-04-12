@@ -1,0 +1,68 @@
+@import url(https://kit.fontawesome.com/b4bedacc0f.js);
+body{
+    margin: 0px;
+    background-color: #ffffff;
+    font-family: Arial;
+    overflow-x: hidden;
+}
+#Title{
+    margin: 0px;
+    font-weight:700;
+}
+nav{
+    width: 100vw;
+    height: 24px;
+    box-shadow: 0px 1px 10px rgba(0 ,0, 0, 0.4);
+    background-color: #FFFFFF;
+    padding: 12px;
+    padding-left: 2.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navitems{
+    margin-right: 4vw;
+    float: right;
+}
+.navitem{
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: 1s;
+}
+#Header{
+    font-size: 70px;
+    margin-left: 100px;
+    margin-top: 75px;
+}
+#grad{
+    background-image: linear-gradient(to bottom right, cyan 25%, limegreen 150%) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navitem:hover{
+    background-image: linear-gradient(to bottom right, cyan 25%, limegreen 150%) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#selection{
+    background-color: #FFFFFF;
+    width: 200px;
+    height: 40px;
+    color: #000000;
+    margin-left:100px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+    transition:500ms;
+    box-shadow: 0px 1px 10px rgba(0 ,0, 0, 0.4);
+}
+#selection:hover{
+    background-color: #0bf4d2;
+    color: #FFFFFF;
+}
