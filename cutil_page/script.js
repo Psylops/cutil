@@ -5,9 +5,5 @@ var osn = document.querySelector("osname")
 osn.value = "Windows";
 
 function download(){
-    var link = document.createElement("a");
-
-    link.download = "test";
-    link.href = "file://files/test.txt";
-    link.click();
+    alert("it works ig")
 }

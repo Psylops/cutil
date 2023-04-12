@@ -1,14 +1,15 @@
-@import url(https://kit.fontawesome.com/b4bedacc0f.js);
 body{
     margin: 0px;
     background-color: #ffffff;
     font-family: Arial;
     overflow-x: hidden;
     height: 100vh;
+    display: inline-block;
 }
 #Title{
     margin: 0px;
     font-weight:700;
+    color: #000000;
 }
 nav{
     width: 100vw;
@@ -68,7 +69,12 @@ nav{
     color: #FFFFFF;
 }
 #Head_Image{
-    float: right;
-    margin: 0px;
-    margin-top: 0px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    width: 50vw;
+    height: 50vh;
+}
+#link{
+    text-decoration: none;
 }
