@@ -30,14 +30,6 @@ end = "\033[0m"
 
 admin = isadmin()
 
-#TODO add daemon mode where it will compile after detecting file changes.
-#TODO add ability to make and read profiles for different files.
-#TODO add logging and save it in a temporary place
-#TODO add the ability to update itself
-#TODO also finish it
-
-
-
 osname = platform.system()
             
 #checking if the terminal supports ansi
