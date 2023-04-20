@@ -9,7 +9,7 @@ import time
 parser = argparse.ArgumentParser()
  
 # add arguments to the parser
-parser.add_argument("command")
+parser.add_argument("-o","command")
  
 # parse the arguments
 args = parser.parse_args()
@@ -79,8 +79,6 @@ print("3) Java")
 print("4) Typescript")
 
 opt = opt.getopt()
-
-
 
 match opt:
     case 1:
