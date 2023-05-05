@@ -21,14 +21,14 @@ def helper():
     print(filecontents)
     f.close()
     
-if args.command == "help":
-    helper()
-    exit()
+#if args.command == "help":
+#    helper()
+#    exit()
 
 # defines end which prevents coloring the terminal and checks if it ran as admin.
 end = "\033[0m"
 
-admin = isadmin()
+#admin = isadmin()
 
 osname = platform.system()
             
@@ -80,13 +80,16 @@ print("4) Typescript")
 
 opt = opt.getopt()
 
+
 match opt:
     case 1:
         os.system("javac {}.java\033[31m".format)
     case 2:
         os.system("")
-print("\033[36mDo you want to execute the program?")
-runfile = input("\033[32mY/n]")
-if runfile == True:
+print("\n")
+runfile = input("\033[36mDo you want to execute the program?\033[35m[\033[32mY\033[35m/\033[31mn\033[35m]\033[0m")
+if runfile == 'n' or 'N':
+    exit(0)
+else:
     run = os.system("start {}" if osname == "Windows" else "./{}".format(filename, filename))
 print(end)

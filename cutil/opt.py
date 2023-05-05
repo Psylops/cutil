@@ -10,8 +10,9 @@ def getopt():
     while True:
         for letter in alphabet: # detect when a letter is pressed
             if keyboard.is_pressed(letter):
-                print("\033[31mPlease enter a valid option")
+                print("\033[31mPlease enter a valid option\n")
                 return Exception
         for num in range(10): # detect numbers 0-9
             if keyboard.is_pressed(str(num)):
                 return str(num)
+                print("\n")
