@@ -93,3 +93,11 @@ nav{
 #link{
     text-decoration: none;
 }
+#section2{
+    width: 100%;
+    height: 23%;
+    margin-top: 20%;
+    background-image: linear-gradient(to bottom right, cyan 25%, limegreen 150%);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
