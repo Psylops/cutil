@@ -50,7 +50,7 @@ nav{
 }
 #Header{
     font-size: 85px;
-    margin-left: 200px;
+    margin-left: 10vw;
     margin-top: 150px;
 }
 #grad{
@@ -68,7 +68,7 @@ nav{
     width: 200px;
     height: 40px;
     color: #FFFFFF;
-    margin-left:200px ;
+    margin-left:10vw ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,7 +147,7 @@ a{
     margin-right: 5%;
 }
 .txtcolor{
-    background-image: linear-gradient(to bottom right, cyan 25%, limegreen 150%);
+    background-image: linear-gradient(to bottom right, cyan , limegreen );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
