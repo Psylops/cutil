@@ -162,7 +162,7 @@ a{
     );
     height: 300px;
     aspect-ratio: 1;
-    position: absolute;
+    position: fixed;
     z-index: -2;
     left: 50%;
     top: 50%;
@@ -182,9 +182,14 @@ a{
     }
 }
 #blur{
-    height: 100%;
+    height: 100vw;
     width: 100%;
     position: absolute;
     z-index: -1;
     backdrop-filter: blur(175px);
+}
+@media screen and (max-width: 1090px) {
+    #Head_Image{
+        display: none;
+    }
 }
