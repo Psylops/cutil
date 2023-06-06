@@ -6,21 +6,6 @@ body{
     overflow-y: auto;
     display: inline-block;
 }
-::-webkit-scrollbar-track{
-    background-color: #f1f1f1;
-}
-::-webkit-scrollbar{
-    width: 12px;
-}
-::-webkit-scrollbar-thumb{
-    background-color: #0bf4d2;
-    border-radius: 25px;
-    transition: 500ms;
-}
-::-webkit-scrollbar-thumb:hover{
-    background-color: #0ADCBD;
-}
-
 #Title{
     margin: 0px;
     font-weight:700;
