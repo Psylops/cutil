@@ -132,9 +132,7 @@ a{
     margin-right: 5%;
 }
 .txtcolor{
-    background-image: linear-gradient(to bottom right, cyan , limegreen );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
 }
 #blob{
     background: linear-gradient(
