@@ -9,7 +9,7 @@ import time
 parser = argparse.ArgumentParser()
  
 # add arguments to the parser
-parser.add_argument("-o","command")
+parser.add_argument('-o', '--help')
  
 # parse the arguments
 args = parser.parse_args()
@@ -82,11 +82,22 @@ opt = opt.getopt()
 
 match opt:
     case 1:
-        os.system("javac {}.java\033[31m".format)
+        os.system("")
     case 2:
         os.system("")
+    case 3:
+        os.system("javac {}.java\033[31m".format)
+    case 4:
+        os.system()
+    
 print("\033[36mDo you want to execute the program?")
 runfile = input("\033[32mY/n]")
+
 if runfile == True:
     run = os.system("start {}" if osname == "Windows" else "./{}".format(filename, filename))
+
+
+
+
+
 print(end)
