@@ -115,6 +115,7 @@ a{
     border-radius: 15px;
     margin-top: 5%;
     margin-left: 40%;
+    aspect-ratio: 1;
   }
   
   .card:hover {
