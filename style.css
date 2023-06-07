@@ -37,6 +37,7 @@ nav{
     font-size: 85px;
     margin-left: 10vw;
     margin-top: 150px;
+    opacity: 0.5;
 }
 #grad{
     background-image: linear-gradient(to bottom right, cyan 25%, limegreen 150%) ;
@@ -82,10 +83,8 @@ nav{
 #section2{
     width: 100%;
     height: 50%;
-    margin-top: 25%;
-    background-image: linear-gradient(to bottom right, cyan 25%, limegreen 150%);
-    background-repeat:no-repeat;
-    background-attachment:fixed;
+    transform: scale;
+    background-color: #0bf4d2;
     color: #fff;
     padding: 25px;
     text-align: center;
@@ -132,7 +131,7 @@ a{
     margin-right: 5%;
 }
 .txtcolor{
-    
+    font-size: 3vmin;
 }
 #blob{
     background: linear-gradient(
@@ -178,4 +177,9 @@ a{
 }
 #burgermenu{
     display: none;
+}
+#wave{
+    margin-top: 20vh;
+    display: block;
+    transform: scale(-1);
 }
