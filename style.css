@@ -109,13 +109,13 @@ a{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background-color: #FFFFFF;
-    width: 260px;
-    height: 18%;
+    width: 200px;
+    height: 300px;
     color: #000000;
     border-radius: 15px;
     margin-top: 5%;
     margin-right: 17px;
-    aspect-ratio: 2 1;
+    aspect-ratio: 1;
     display: block;
   }
   
@@ -130,6 +130,8 @@ a{
   .card-img{
     margin-top: 20px;
     margin-bottom: 10px;
+    width:7vw;
+    aspect-ratio: 2 1;
   }
 #card-container{
     display: flex;
@@ -155,19 +157,19 @@ a{
     z-index: -2;
     left: 50%;
     top: 50%;
-    translate: -50% -50%;
+    transform: translate(-50% -50%);
     border-radius: 50%;
     animation: rotate 20s infinite;
 }
 @keyframes rotate{
     from{
-        rotate: 0deg;
+        transform:rotate( 0deg);
     }
     50%{
-        scale: 1 1.5;
+        transform:scale( 1 1.5);
     }
     to{
-        rotate: 360deg;
+        transform:rotate( 360deg);
     }
 }
 #blur{
@@ -175,6 +177,7 @@ a{
     width: 100%;
     position: absolute;
     z-index: -1;
+    -webkit-backdrop-filter: blur(175px);
     backdrop-filter: blur(175px);
 }
 @media screen and (max-width: 1090px) {
@@ -191,9 +194,14 @@ a{
 #burgermenu{
     display: none;
 }
-#wave{
+.wave{
     width: 100vw;
-    margin-top: 20vh;
+    margin-top: 33vh;
     display: block;
     transform: scale(-1);
+    transform:rotate(0deg); 
+    transition: 0.3s
+}
+#svgpath{
+    transform:translate(0, 0px); opacity:1
 }
