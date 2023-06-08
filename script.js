@@ -1,10 +1,11 @@
 const blob = document.getElementById('blob');
 
 document.addEventListener('mousemove', (e) => {
-
+    let x = e.clientX /1.25
+    let y = e.clientY /1.25
     blob.animate({
-        left: `${e.clientX}px`,
-        top: `${e.clientY}px`
+        left: `${x}px`,
+        top: `${y}px`
     }, {duration: 1500, fill: "forwards"});
 
 });
