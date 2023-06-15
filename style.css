@@ -34,7 +34,7 @@ nav{
     transition: 1s;
 }
 #Header{
-    font-size: 85px;
+    font-size: 80px;
     margin-left: 10vw;
     margin-top: 150px;
     opacity: 0.5;
@@ -109,8 +109,8 @@ a{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background-color: #FFFFFF;
-    width: 200px;
-    height: 300px;
+    width: 20vw;
+    height: 15vh;
     color: #000000;
     border-radius: 15px;
     margin-top: 5%;
@@ -183,6 +183,7 @@ a{
 @media screen and (max-width: 1090px) {
     #Header{
          opacity: 1;
+         font-size: 15vmin;
     }
     #Head_Image{
         display: none;
