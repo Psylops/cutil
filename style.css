@@ -114,7 +114,8 @@ a{
   }
   
   .card:hover {
-    color: #0bf4d2;
+    color: #fff;
+    background-color: #0bf4d2;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
@@ -195,3 +196,80 @@ a{
 #svgpath{
     transform:translate(0, 0px); opacity:1
 }
+.terminal {
+    background-color: black;
+    color: lime;
+    font-family: monospace;
+    padding: 10px;
+    width: 400px;
+  background-color: black;
+  color: lime;
+  font-family: monospace;
+  padding: 10px;
+  width: 400px;
+  overflow-y: auto;
+}
+
+.prompt {
+  color: white;
+  display: inline;
+}
+
+.input {
+  display: inline;
+  outline: none;
+  cursor: none;
+}
+
+.input::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 100%;
+  background-color: lime;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+  .prompt {
+    color: white;
+    display: inline;
+  }
+  
+  .input {
+    display: inline;
+    outline: none;
+
+  }
+  
+  .input::after {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 10px;
+    background-color: lime;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
